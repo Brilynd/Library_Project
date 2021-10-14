@@ -39,6 +39,11 @@ function addBookToLibrary(title,author,legnth,read) {
   INPUT=document.createElement("input")
   INPUT.setAttribute("id","haveread")
   INPUT.setAttribute("type","checkBox")
+
+  removeButton=document.createElement("button")
+  removeButton.textContent="Remove"
+  removeButton.setAttribute("id","remove")
+  
     
 
 
@@ -47,7 +52,6 @@ function addBookToLibrary(title,author,legnth,read) {
   CARDS.appendChild(AUTHOR)
   CARDS.appendChild(LEGNTH)
   CARDS.appendChild(READ)
-  
   CARDS.appendChild(INPUT)
   if (read=="true"|read=="t"|read=="True"){
     INPUT.checked=true
@@ -55,8 +59,18 @@ function addBookToLibrary(title,author,legnth,read) {
 else{
     INPUT.checked=false
 }
+CARDS.appendChild(removeButton)
 
+removeListener=document.getElementById("remove")
+
+
+
+
+removeListener.addEventListener("click",function () {
+  CARDS.remove()
+});
 }
+
 
 buttonAdd.addEventListener("click", function () {
   bookTitle=prompt("What is the book title?")
