@@ -154,5 +154,12 @@ html {
   #cards #card {
     width: 80%;
   }
+  .Navbar{
+    padding-top:2%;
+    padding-bottom:2%;
+  }
+  .background{
+    height:30vh;
+  }
 }
 /*# sourceMappingURL=library.css.map */
