@@ -128,7 +128,7 @@ html {
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   display: inline-block;
   border-radius: 3%;
-  padding: 10% 1%;
+  padding: 8% 1%;
   margin-top: 10vh;
   background-color: #f1eeee;
   width: 30%;
@@ -146,6 +146,17 @@ html {
   margin-bottom: 3%;
 }
 
+#cards #card #remove {
+  margin-top: 15%;
+  padding: 4% 10%;
+  color: white;
+  background-color: red;
+  display: block;
+  border-color: red;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+
 @media (max-width: 970px) {
   #cards {
     display: block;
@@ -154,12 +165,12 @@ html {
   #cards #card {
     width: 80%;
   }
-  .Navbar{
-    padding-top:2%;
-    padding-bottom:2%;
+  #cards .background {
+    height: 30vh;
   }
-  .background{
-    height:30vh;
+  #cards .Navbar {
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
 /*# sourceMappingURL=library.css.map */
